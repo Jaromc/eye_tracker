@@ -1,6 +1,8 @@
 # Eye tracking using Tensorflow #
 
-Eye tracking using the UTK and 300W datasets. The data was first sanitized to remove some images that were outside my use case. For example, multiple people in the image or in some cases the landmarks were just incorrect.
+Eye tracking using the UTK and 300W datasets. This example uses only the eye landmarks and not the full landmark set around the face. 
+
+The data was first sanitized to remove some images that were outside my use case. For example, multiple people in the image or in some cases the landmarks were just incorrect.
 
 A number of examples online using the UTK dataset suffer generalization issues. The dataset is very curated. To attempt improve upon this I augmented the images which produced ok results. I then added in augmentation per epoch which adds a lot of overhead but produced better results. The final step was to add the 300W dataset which contains whole body images vs UTKs face only images.
 
